@@ -27,8 +27,9 @@ public class Person {
     @Column(nullable = false, unique = true)//unique, o valor da coluna tem que ser unico
     private String cpf;
 
-    private LocalDate birthDate;
+    private String birthDate;
 
     @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST,CascadeType.MERGE, CascadeType.REMOVE})
     private List<Phone> phones;
-}
+
+    }
