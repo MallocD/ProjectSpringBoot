@@ -6,6 +6,7 @@ import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
 
+
 @Entity
 @Data//Serve para criar os getters e setters
 @Builder//Cria o corpo
